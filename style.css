@@ -1,0 +1,14 @@
+/* Add these styles to your CSS */
+#dropdown-example > div {
+    display: none;
+}
+
+#down-example:f.dropocus-within > div,
+#dropdown-example:hover > div {
+    display: block;
+}
+
+/* Smooth transition for dropdown */
+#dropdown-example > div {
+    transition: all 0.3s ease;
+}
