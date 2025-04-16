@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DayCarePro SignUp</title>
+  <title>DayCarePro SignIn</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -38,13 +38,13 @@
             </div>
         </div></a>
     </div>
-      <a href="signup.html" class="block text-gray-700 hover:text-blue-500"><div id="relative" class="block text-gray-700 hover:text-blue-500 flex items-center px-4 py-2 border-gray-100 rounded-lg">
+      <a href="staffform.html" class="block text-gray-700 hover:text-blue-500"><div id="relative" class="block text-gray-700 hover:text-blue-500 flex items-center px-4 py-2 border-gray-100 rounded-lg">
         <button class="w-full flex items-center px-4 py-2 rounded-lg">
             <i class="fas fa-user-tie mr-2 w-5 h-5 mr-3"></i>
             Staff
         </button>
         <div class="relative bg-white shadow-lg mt-1 rounded-lg">
-            <a href="staffform.html" class="block px-4 py-2 hover:bg-gray-100">SignUp</a>
+            <a href="signup.html" class="block px-4 py-2 hover:bg-gray-100">SignUp</a>
             <a href="signin.html" class="block px-4 py-2 hover:bg-gray-100">SignIn</a>
             
         </div>
@@ -85,28 +85,25 @@
 
         <body class="bg-gray-100 flex items-center justify-center min-h-screen">
         
-          <!-- Sign Up Card -->
-        <div class="grid grid-cols-2 md:grid-cols-2">
-          <div class="bg-white p-8 rounded-xl shadow-md w-full max-w-sm">
-            <h2 class="text-2xl font-bold text-center mb-6">Create Account</h2>
+          <!-- Sign In Card -->
+           <div class="grid grid-cols-2 md:grid-cols-2 gap-6">
+          <div class="bg-white p-8 rounded-xl shadow-md w-full">
+            <h2 class="text-2xl font-bold text-center mb-6">Sign In</h2>
             <form>
-              <input type="text" placeholder="Full Name" class="w-full mb-4 p-3 border rounded-lg" required>
               <input type="email" placeholder="Email" class="w-full mb-4 p-3 border rounded-lg" required>
               <input type="password" placeholder="Password" class="w-full mb-4 p-3 border rounded-lg" required>
-              <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Sign Up</button>
+              <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Login</button>
             </form>
             <p class="mt-4 text-center text-sm">
-              Already have an account?
-              <button onclick="toggleSignup(true)" class="text-blue-600 hover:underline">Sign In</button>
+              Don't have an account?
+              <button onclick="toggleSignup(true)" class="text-blue-600 hover:underline">Sign up</button>
             </p>
-            
           </div>
-        
-<!--Words-->
+          <!--Words-->
 <section class="bg-white dark:bg-white">
   <div class="py-4 px-2 mx-auto max-w-screen-xl text-center">
-      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-blue-600">Welcome to DayCarePro,</h1>
-      <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl  dark:text-gray-400">Where care meets connection. Join our caring community – Sign up to begin your amazing Journey. Tiny footsteps, big dreams – let’s begin!</p>
+      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-blue-600">Hello there! We're glad to see you again.</h1>
+      <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl  dark:text-gray-400">Welcome! Let’s make today magical. Ready to inspire and care? Let’s do this!</p>
       <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
           <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
               Get started
@@ -120,27 +117,24 @@
       </div>
   </div>
 </section>
-
-
-        </div>
-          
+</div>
         
-          <!-- Sign in -->
+          <!-- Sign Up Modal -->
           <div id="signupModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
-            <div class="bg-white p-8 rounded-xl shadow-lg w-128 max-w-sm relative">
-              <button onclick="toggleSignup(true)" class="absolute top-2 right-2 text-gray-400 hover:text-gray-600 text-xl">&times;</button>
-              <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
+            <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-sm relative">
+              <button onclick="toggleSignup(false)" class="absolute top-2 right-2 text-gray-400 hover:text-gray-600 text-xl">&times;</button>
+              <h2 class="text-2xl font-bold text-center mb-6">Create Account</h2>
               <form>
+                <input type="text" placeholder="Full Name" class="w-full mb-4 p-3 border rounded-lg" required>
                 <input type="email" placeholder="Email" class="w-full mb-4 p-3 border rounded-lg" required>
                 <input type="password" placeholder="Password" class="w-full mb-4 p-3 border rounded-lg" required>
-                <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">Login</button>
+                <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">SignUp</button>
               </form>
               <p class="mt-4 text-center text-sm">
                 Don't have an account?
-                <a href="signup.html"><button onclick="toggleSignup(true)" class="text-blue-600 hover:underline">SignUp</button></a>
+                <button onclick="toggleSignup(false)" class="text-blue-600 hover:underline">Sign in</button>
               </p>
             </div>
-            
           </div>
         
           <!-- JavaScript -->
